@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<!--Repetir si me da tiempo -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio7</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+    <script type="module">
+        import MOTOS from "./motos.js";
+        console.log(MOTOS);
+        function comparaPrecio(a, b) {
+            return a.preu - b.preu
+        }
+        MOTOS.sort(comparaPrecio);
+        console.log("precio mas alto: " + MOTOS[MOTOS.length - 1].preu + " euros.");
+        console.log("precio mas bajo: " + MOTOS[0].preu + " euros.");
+
+        let Pregunta1 = MOTOS.filter(el => el.model.includes("HONDA")).filter(el => el.kilometres <= 30000);
+        // el => al elemento se le aplica esta funcion, se aplica a todos por filter() creo
+        console.log("¿Cuántas motos hay con menos de 30.000 km de la marca HONDA?", Pregunta1);
+
+        let Pregunta2 = MOTOS.filter(el => el.cilindrada >= 240).filter(el => el.kilometres <= 30000);
+        console.log("¿Cuántas motos hay con menos de 30.000 km de más de 240cc?", Pregunta2);
+
+        let Pregunta3 = MOTOS.filter(el => el.cilindrada >= 350).filter(el => el.kilometres <= 25000)
+            .filter(el => el.preu > 1800).filter(el => el.preu < 2200);
+        console.log("¿Qué moto tiene menos de 25.000 km, más de 350cc de cilindrada y cuesta entre 1.800 y 2.200 eur?", Pregunta3);
+
+        //let ArrayTodasMarcas = [];
+        //No hace falta definir primero el array, pero quiza es mejor hacerlo
+        let ArrayTodasMarcas = MOTOS.map(el => el.model.split(" ")[0]);
+        //map crea un nuevo array a partir de la funcion, 
+        //split(" ")separa el interior de las "" usando los espacios creando nuevos strings
+        //con [0] indicamos que solo queremos el primer corte
+        let ArrayNombresMarcas = [...new Set(ArrayTodasMarcas)];
+        // set crea un nuevo array sin los duplicados, aunq no hace falta...
+        let counts = {};
+        // Aqui estamos declarando un "objeto", NO un "Array" [], aunq para JS array es un objeto, y funciona igual con []
+        ArrayTodasMarcas.forEach(function contar (elemento) { 
+            counts[elemento] = (counts[elemento] || 0) + 1; 
+        });
+        console.log("Lista de las marcas distintas con elnúmero de motos de cada una:",counts);
+
+        /* A cada elem. del array le aplicamos la funcion contar
+        counts[elemento] se traduce en counts["HONDA"],counts["VESPA"],etc
+        counts[elemento] = counts[elemento] +1, igual q x=x+1 para poder sumar 1 a x
+        or || se salta los valores "falsos", hasta que puede dar un true
+        , o el ultimo"falso" 
+        or || es necesario porque la primera vez counts[elemento] = undefined "falso"
+        nos lo saltaremos y sera igual 0 ) +1
+        Dejando de ser undefined para la proxima vez que agreguemos a esta posicion
+        del array. */
+//Funcion test, para entender ||
+let abc= ["a","s","a","c","d"];
+let contador={};
+abc.forEach(function contar (elemento) { 
+    contador["a"] = (contador["a"]||undefined||0||1||2)+1 ; 
+ });
+console.log(contador);
+     /* Esta funcion da como resultado a:6 
+     El array abc tiene 5 elementos.
+     La funcion contar se invoca 5 veces.
+     (1) La primera vez contador["a"] es equivalente a undefined "falso"
+     se salta y pasa a 0 "falso"
+     se salta y pasa a 1 "true", se detiene, 2 es ignorado
+     el interior de () pasa a ser 1 
+     se le (1)+1=2
+     (2) La segunda vez contador["a"] ya no es undefined, es 2 "true"
+    se detiene, los otros valores se ignoran
+    (2)+1=3
+     La funcion es llamada 5 veces, sumando 1 cada vez = 5;
+     El valor inicial cuando accedemos a la posicion 
+     del array por primera vez es 1 
+     por lo tanto 1 +5 =6, a:6;
+     */
+    </script>
+
+</body>
+
+</html>

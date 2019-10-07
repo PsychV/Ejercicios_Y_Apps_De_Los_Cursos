@@ -1,0 +1,27 @@
+<!-- .ejs es un html que se hace pasar por JS -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <form method=post><input type=text value="<%= valorInicial %>" /> <select name=desde>
+            <option value=Metros1>De Metros</option>
+            <option value=Km1>De Km</option>
+            <option value=Millas1>De Millas</option>
+            <option value=Yardas1>De Yardas</option>
+        </select> <select name=hacia>
+            <option value=Metros2>A Metros</option>
+            <option value=Km2>A Km</option>
+            <option value=Millas2>A Millas</option>
+            <option value=Yardas2>A Yardas</option>
+        </select> <button type=submit>Enviar</button> </form>
+        <h3>Resultado: <%= resultado %></h3>
+</body>
+
+</html>

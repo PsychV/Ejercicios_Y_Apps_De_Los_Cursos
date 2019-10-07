@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Endevina</title>
+
+</head>
+
+<body>
+    <br>
+    <h1>Penjat:</h1>
+
+    paraula actual: <%= palabraActual %> <br />
+    vides: <%= vidas %> <br />
+    lletres ok: <% letras.forEach(el => { %>
+    [<%= el %>]&nbsp;
+    <% }) %>
+    <br>
+    <img src="vidas_<%= vidas %>.jpg" />
+    <br>
+    <% if (palabraActual.indexOf("-")>-1 && vidas>0) { %>
+
+    <form action="/adivina/letra/" method="post">
+        <p>
+            <label for="lletra">Lletra</label>
+            <input type="text" name="lletra" id="lletra"  autofocus />
+            <!-- Name="lletra" es lo que hace funcionar este POST id lletra se puede quitar -->
+            <input type="submit" />
+        </p>
+    </form>
+
+    <% }else if(vidas===0){ %>
+    <h1>Game Over</h1>
+    <% } else { %>
+    <h1>winner</h1>
+
+    <%}%>
+
+    <a href="/nova">Reiniciar</a>
+</body>
+
+</html>

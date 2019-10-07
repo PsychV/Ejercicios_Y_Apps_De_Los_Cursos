@@ -1,0 +1,486 @@
+body {
+    padding: 50px;
+    background-color: beige;
+}
+
+h1 {
+    color: brown;
+}
+
+body.ejercicio1 {
+    margin: 100px;
+}
+
+article.gatos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: beige;
+}
+
+article.gatos img {
+    vertical-align: left;
+}
+
+p article.gatos {
+    vertical-align: middle;
+}
+
+h1 .fnt-red {
+    color: red;
+}
+
+.fnt-blue {
+    color: blue;
+}
+
+#nombre_alumno {
+    color: red;
+    text-decoration: underline;
+}
+
+.titulo {
+    color: aquamarine;
+    font-size: 30px;
+    font-style: italic;
+}
+
+.texto {
+    color: darkblue;
+    font-size: 15px;
+}
+
+.destacado {
+    font-style: italic;
+    font-weight: bold;
+}
+
+div.caja-producto {
+    background-color: #fff;
+    margin: auto;
+    width: 220px;
+    height: 410px;
+    text-align: center;
+    border: 2px dashed solid black;
+    padding: 4px;
+    border-radius: 10px;
+    margin: 6px;
+    float: left;
+}
+
+img.foto-producto {
+    width: 210px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+img.logo-pagina {
+    width: 25px;
+    height: 25px;
+    z-index: 10;
+    position: relative;
+    top: -249px;
+    right: -81px;
+}
+
+p.precio-producto {
+    font-family: Helvetica;
+    font-size: 20px;
+    text-align: left;
+    margin-left: 7px;
+    color: #020202;
+    font-weight: 700;
+    top: -36px;
+    position: relative;
+}
+
+p.titulo-producto {
+    font-family: Arial;
+    text-align: left;
+    margin-left: 7px;
+    font-size: 15px;
+    color: #253238;
+    position: relative;
+    top: -49px;
+}
+
+p.descripcion-producto {
+    font-family: sans-serif;
+    text-align: left;
+    margin-left: 7px;
+    line-height: 1.5;
+    font-size: 12px;
+    color: #607D8B;
+    position: relative;
+    top: -54px;
+}
+
+img.logo-like {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 44px;
+    top: -53px;
+}
+
+img.logo-mensaje {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: -40px;
+    top: -51px;
+}
+
+div.head-static {
+    height: 60px;
+    background-color: blue;
+    border: 1px black solid;
+}
+
+div.head-foot-distance {
+    height: 500px;
+}
+
+div.head-foot-distance a {
+    line-height: 300px;
+}
+
+div.foot-static {
+    height: 60px;
+    background-color: red;
+    border: 1px black solid;
+}
+
+div.head-static h1 {
+    color: white;
+    text-align: center;
+    position: relative;
+    line-height: 60px;
+    margin: 0px;
+}
+
+div.foot-static h1 {
+    color: white;
+    text-align: center;
+    line-height: 60px;
+    margin: 0px;
+}
+
+div.rectangulo {
+    width: 50%;
+    height: 400px;
+    position: relative;
+    right: -25%;
+    background-color: crimson;
+}
+
+div.circulo-top-left {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 5px crimson solid;
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background-color: beige;
+}
+
+div.circulo-top-right {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 5px crimson solid;
+    position: absolute;
+    top: -50px;
+    right: -50px;
+    background-color: beige;
+}
+
+div.circulo-bottom-left {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 5px crimson solid;
+    position: absolute;
+    top: +300px;
+    left: -50px;
+    background-color: beige;
+}
+
+div.circulo-bottom-right {
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+    border: 5px crimson solid;
+    position: absolute;
+    top: +300px;
+    right: -50px;
+    background-color: beige;
+}
+
+div.rectangulo p {
+    font-size: 50px;
+    color: white;
+    font-family: Impact;
+    text-align: center;
+    line-height: 400px;
+}
+
+i.fa {
+    font-size: 60px;
+    color: white;
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+
+div.hand-container {
+    width: 220px;
+    height: 220px;
+    margin: auto;
+}
+
+div.pointing-hand {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    float: left;
+}
+
+div.right-hand {
+    background-color: red;
+}
+
+div.down-hand {
+    background-color: green;
+}
+
+div.up-hand {
+    background-color: blue;
+}
+
+div.left-hand {
+    background-color: black;
+}
+
+ul.fa-ul {
+    position: relative;
+    margin-left: 10px;
+}
+
+div.body-tablas {
+    width: 670px;
+    border-left: 1px solid black;
+    height: 630px;
+    margin-top: 10px;
+    padding-left: 60px;
+    padding-top: 30px;
+}
+
+div.body-tablas p {
+    color: navy;
+}
+
+div.body-tablas h1 {
+    color: rgb(4, 4, 87);
+}
+
+div.cliente-info p, div.cliente-info h1 {
+    margin: 0;
+}
+
+div.cliente-info h1 {
+    font-size: 20px;
+}
+
+div.column {
+    float: left;
+    width: 280px;
+}
+
+div.column img {
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 9px;
+}
+
+div.column-factura {
+    width: 100%;
+}
+
+div.row {
+    width: 695px;
+    display: table;
+}
+
+div.numero-factura {
+    text-align: left;
+    padding-left: 70px;
+}
+
+div.numero-factura p {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+div.raya-factura {
+    border-bottom: 2px solid rgb(127, 214, 255);
+    width: 210px;
+}
+
+div.cliente-info {
+    border-left: 7px solid rgb(127, 214, 255);
+    border-right: 7px solid rgb(127, 214, 255);
+    width: 316px;
+    padding-left: 20px;
+}
+
+div.column-concepto {
+    background-color: rgb(127, 214, 255);
+    height: 25px;
+    width: 235px;
+    float: left;
+    padding-top: 3.5px;
+    margin-top: 50px;
+}
+
+div.column-concepto2 {
+    height: 50px;
+    width: 235px;
+    float: left;
+    border-bottom: 2px solid rgb(127, 214, 255);
+}
+
+div.column-concepto3 {
+    height: 125px;
+    width: 235px;
+    float: left;
+    border-bottom: 4px solid rgb(127, 214, 255);
+}
+
+div.column-concepto p {
+    color: black;
+    font-weight: 500;
+}
+
+div.column-concepto2 p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-size: 14px;
+}
+
+div.column-cantidad {
+    background-color: rgb(127, 214, 255);
+    height: 25px;
+    width: 200px;
+    float: left;
+    padding-top: 3.5px;
+    margin-top: 50px;
+}
+
+div.column-cantidad2 {
+    height: 50px;
+    width: 200px;
+    float: left;
+    border-bottom: 2px solid rgb(127, 214, 255);
+}
+
+div.column-cantidad3 {
+    height: 125px;
+    width: 200px;
+    float: left;
+    border-bottom: 4px solid rgb(127, 214, 255);
+}
+
+div.column-cantidad p {
+    color: black;
+    font-weight: 500;
+}
+
+div.column-cantidad2 p {
+    font-size: 14px;
+}
+
+div.column-cantidad3 p {
+    line-height: 23px;
+    margin: 5px;
+    text-align: right;
+}
+
+div.column-cantidad3 h1 {
+    font-size: 20px;
+    text-align: right;
+}
+
+div.column-IVA {
+    background-color: rgb(127, 214, 255);
+    height: 25px;
+    width: 200px;
+    float: left;
+    text-align: right;
+    padding-top: 3.5px;
+    margin-top: 50px;
+}
+
+div.column-IVA2 {
+    height: 50px;
+    width: 200px;
+    float: left;
+    text-align: right;
+    border-bottom: 2px solid rgb(127, 214, 255);
+}
+
+div.column-IVA3 {
+    height: 125px;
+    width: 200px;
+    float: left;
+    text-align: right;
+    border-bottom: 4px solid rgb(127, 214, 255);
+}
+
+div.column-IVA p {
+    color: black;
+    font-weight: 500;
+}
+
+div.column-IVA2 p {
+    font-size: 14px;
+}
+
+div.column-IVA3 p {
+    font-size: 14px;
+    line-height: 23px;
+    margin: 5px;
+    text-align: right;
+}
+
+div.column-IVA3 h1 {
+    font-size: 20px;
+}
+
+div.lowerbody p {
+    margin: 0;
+}
+div.lowerbody4 {
+    height:50px;
+    widows: 635px;
+}
+/*  Si me da tiempo, intentar mas adelante. Poner texto en vertical.
+p.vertical-align {
+    transform: rotate(-90deg);
+    font-size: 10px;
+    transform-origin: 0% 100%;
+}
+ */
+div.boxverde {
+    height: 50px;
+    background-color: green;
+    border: 2px solid black;
+    width: 100%;
+}
+
+div.boxrojo {
+    height: 50px;
+    background-color: red;
+    border: 2px solid black;
+    width:100%;
+}

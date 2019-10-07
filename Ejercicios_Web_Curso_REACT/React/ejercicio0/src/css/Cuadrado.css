@@ -1,0 +1,7 @@
+div.Cuadrado {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    display: inline-block;
+    margin: 5px;
+}

@@ -1,0 +1,59 @@
+.ImgPerfilGrande
+{
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+div.Profile-Card {
+    border: 1px solid rgba(0, 0, 0, 0.125);
+  }
+
+/* La linea de abajo controla el css del Header */  
+div.margen-nav{
+    margin:0;
+}
+
+h4 {
+display: inline;
+margin-right: 20px;
+}
+
+.Center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  hr.Profile {
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
+  h4.Profile {
+      margin-top: 10px;
+  }
+
+  p.Profile_Mail {
+      font-size: 15px;
+  }
+
+  .clickableText {
+    color: blue;
+}
+.clickableText:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.tituloIntereses {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.clickableInterest:hover {
+    cursor: pointer;
+    transform: scale(1.05)
+}

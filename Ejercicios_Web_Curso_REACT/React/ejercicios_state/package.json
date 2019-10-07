@@ -1,0 +1,44 @@
+{
+  "name": "ejercicios_state",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.21",
+    "@fortawesome/free-solid-svg-icons": "^5.10.1",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "bootstrap": "^4.3.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.15.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "babel-preset-nano-react-app": "^0.1.0",
+    "parcel-bundler": "^1.11.0"
+  },
+  "babel": {
+    "presets": [
+      "nano-react-app"
+    ],
+    "plugins": [
+      [
+        "@babel/plugin-proposal-class-properties",
+        {
+          "loose": true
+        }
+      ],
+      [
+        "@babel/plugin-transform-react-jsx",
+        {
+          "pragmaFrag": "React.Fragment"
+        }
+      ]
+    ]
+  }
+}

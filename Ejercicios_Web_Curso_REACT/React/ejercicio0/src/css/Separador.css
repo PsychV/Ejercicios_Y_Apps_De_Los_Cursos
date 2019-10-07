@@ -1,0 +1,12 @@
+hr.linea1 {
+display: block;
+background-color: black;
+height: 1px;
+margin-bottom: 0px;
+}
+hr.linea2 {
+display: block;
+background-color: black;
+height: 3px;
+margin-top:4px;
+}
